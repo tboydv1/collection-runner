@@ -22,11 +22,7 @@
 			],
 			"request": {
 				"method": "POST",
-				"header": [
-					{
-						"Content-Type": "application/json"
-					}
-				],
+				"header": [],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"email\":\"tboydv1@gmail.com\", \r\n    \"password\":\"123pass321\"\r\n}",
@@ -47,6 +43,39 @@
 						"jwt"
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"ukac@gmail.com\",\n    \"password\":\"123pass321\",\n    \"first_name\": \"Nonye\",\n    \"last_name\": \"Nwobodo\",\n    \"job_role\": \"HR\",\n    \"organisation\": \"iot\",\n    \"website\": \"We.com\",\n    \"corporate\": true,\n    \"application\": \"lamp\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lampauth.herokuapp.com/auth/accounts/register/",
+					"protocol": "https",
+					"host": [
+						"lampauth",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"auth",
+						"accounts",
+						"register",
+						""
+					]
+				},
+				"description": "This endponit is for business registration"
 			},
 			"response": []
 		}
