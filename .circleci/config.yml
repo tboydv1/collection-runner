@@ -1,8 +1,9 @@
 version: 2.1
 orbs:
-  newman: postman/newman@1.0.0
+  newman: postman/newman@0.0.2
 jobs:
-  newman-collection-run-env-timeout:
+ build:
+    newman-collection-run-env-timeout:
     executor: newman/postman-newman-docker
     steps:
       - checkout
@@ -10,3 +11,5 @@ jobs:
           collection: ./collection/Api_Test.postman_collection.json
           environment: ./env/LAMP-staging.postman_environment.json
           timeout: '1000'
+
+
