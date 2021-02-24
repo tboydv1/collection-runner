@@ -22,7 +22,11 @@
 			],
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"Content-Type": "application/json"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"email\":\"tboydv1@gmail.com\", \r\n    \"password\":\"123pass321\"\r\n}",
